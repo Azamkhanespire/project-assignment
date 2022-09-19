@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<body>
+
+  
+  <div class="look">
+    <ul class="nav">
+      <li><a href="https://www.jiosaavn.com/login?redirect=/">Login/SignUp</a></li>
+      <li><a href="https://www.jiosaavn.com/original-podcasts">PODCAST</a></li>
+      <li><a href="https://www.jiosaavn.com/top-artists">ARTISTS</a></li>
+      <li><a href="https://www.jiosaavn.com/">MUSIC</a></li>
+      <li><a href="#">HOME</a></li>
+    </ul>
+    <div class ="im">
+      <img src="assets/img\R.png" alt="image">
+    </div>
+
+    <div class="right">
+ 
+      <b>Click To Play</b>
+      
+    
+      <img src="assets/img/play.png" id="icon">
+  
+    </div>
+    </div>
+    <audio id="mysong">
+  
+  
+      <source src="assets/DJ Snake ft. Justin Bieber - Let Me Love You [Lyric Video].mp3" type="audio/mp3">
+  
+  
+    </audio>
+  
+    <script>
+      var mysong = document.getElementById("mysong");
+  
+      var icon = document.getElementById("icon");
+      icon.onclick = function () {
+  
+        if (mysong.paused) {
+  
+          mysong.play();
+  
+          icon.src = "assets/img/pause.png";
+  
+        } else {
+  
+          mysong.pause();
+  
+          icon.src = "assets/img/play.png";
+        }
+      }
+  
+    </script>
+    </div>
+    </div>
+  
+  </div>
+
+ 
+
+</body>
+<style>
+  .look {
+    height: 120vh;
+    width: 100%;
+     /* background-image: url(' https://mycodelesswebsite.com/wp-content/uploads/2020/01/Best-Music-Website-Template-1080x628.jpg'); */
+    background-color: rgb(175, 239, 248);
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+
+  .nav li {
+    float: right;
+    list-style: none;
+    color: rgb(0, 255, 238);
+  }
+
+
+  .nav a{
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+    font-weight: 550;
+    display: block;
+    padding: 5px 35px;
+    color: rgb(234, 71, 71);
+    text-decoration: none;
+   
+  }
+
+  a:hover {
+    background-color: yellow;
+  }
+
+
+  right {
+
+    float: right;
+
+    margin-right: 6%;
+
+    margin-top: 120px;
+
+    display: flex;
+
+    align-items: center;
+
+  }
+
+
+
+  .right p {
+
+    font-size: 18px;
+
+    color: #5f5f5f;
+
+    font-weight: 500;
+
+    font-family: sans-serif;
+
+    margin-right: 15px;
+
+  }
+
+
+
+  #icon {
+
+    width: 80px;
+
+    cursor: pointer;
+
+  }
+
+  #myInput {
+
+    width: 12%;
+
+    margin: auto;
+
+    padding: 12px 0;
+
+    display: flex;
+
+    align-items: right;
+
+    justify-content: space-between;
+
+  }
+.im {
+  padding: 134px 197px 100px 126px;
+  width: 175%;
+  }
+</style>
+
+</head>
+
+
+</html>
